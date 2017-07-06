@@ -1,0 +1,17 @@
+{
+  "name": "simple-api-crud",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cors": "^2.8.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "mongoose": "^4.11.1",
+    "morgan": "~1.8.1",
+    "nodemon": "^1.11.0"
+  }
+}
