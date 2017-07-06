@@ -40,8 +40,8 @@ var update = function (req,res) {
 }
 
 var remove = function (req,res) {
-  Todo.findByIdAndRemove(req.params.id, (err, food) => {
-    err ? res.status(500).send(err)
+  Food.findByIdAndRemove(req.params.id, (err, food) => {
+    if (err) res.status(500).send(err);
     var response = {
         message: "Food successfully deleted",
         id: food._id
